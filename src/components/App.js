@@ -8,7 +8,10 @@ import reducer from '../reducers/index'
 
 
 function App() {
-  const [state, dispatch] = useReducer(reducer,[])
+  const initialstate = {
+    events:[]
+  }
+  const [state, dispatch] = useReducer(reducer,initialstate)
   
 
   return (
